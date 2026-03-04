@@ -13,11 +13,20 @@ authors = [
     { name = "Sagynysh Zhaksylyk", email = "sagynysh.jaksylyk@gmail.com" },
 ]
 [project.urls]
-Homepage = "https://github.com/sagynysh/kalkan-xml-signer"
-Repository = "https://github.com/sagynysh/kalkan-xml-signer"
+Homepage = "https://github.com/sagynysh95/kalkan-xml-signer"
+Repository = "https://github.com/sagynysh95/kalkan-xml-signer"
 
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: POSIX :: Linux",
 ]
+
+[project.scripts]
+kalkan-install-certs = "kalkan_xml_signer.certs:install_certs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["kalkan_xml_signer"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"kalkan_xml_signer/certs" = "kalkan_xml_signer/certs"

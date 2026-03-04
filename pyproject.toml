@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kalkan-xml-signer"
+version = "0.1.0"
+description = "XML signing using KalkanCrypt library (Kazakhstan PKI)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Sagynysh Zhaksylyk", email = "sagynysh.jaksylyk@gmail.com" },
+]
+[project.urls]
+Homepage = "https://github.com/sagynysh/kalkan-xml-signer"
+Repository = "https://github.com/sagynysh/kalkan-xml-signer"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]

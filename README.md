@@ -91,6 +91,8 @@ signer.finalize()
 ```dockerfile
 FROM python:3.12-slim-bookworm
 
+RUN apt-get update && apt-get install -y --no-install-recommends libltdl7 libpcsclite1 && rm -rf /var/lib/apt/lists/*
+
 # Копируем библиотеку KalkanCrypt
 COPY libs/libkalkancryptwr-64.so.2.0.2 /usr/lib/libkalkancryptwr-64.so.2.0.2
 

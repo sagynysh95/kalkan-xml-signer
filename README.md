@@ -2,7 +2,7 @@
 
 Python-библиотека для подписи XML документов с использованием KalkanCrypt (Kazakhstan PKI).
 
-Работает через ctypes-обёртку над нативной библиотекой `libkalkancryptwr-64.so`, предоставляемой НУЦ РК.
+Работает через ctypes-обёртку над нативной библиотекой `libkalkancryptwr-64.so.2.0.2`, предоставляемой НУЦ РК.
 
 > **Поддерживаемые ОС:** только Debian-подобные дистрибутивы Linux (Debian, Ubuntu, Astra Linux и т.д.).
 
@@ -19,7 +19,7 @@ pip install kalkan-xml-signer
 Библиотека `libkalkancryptwr-64.so.2.0.2` не включена в пакет и должна быть получена отдельно.
 
 1. Перейдите на [pki.gov.kz/en/get-sdk-3](https://pki.gov.kz/en/get-sdk-3/) и запросите SDK
-2. Скачайте SDK и найдите файл `libkalkancryptwr-64.so.2.0.2` в папке `C/Linux/C/libs/v2.0.2 (Сертифицированная версия)/libkalkancryptwr-64.so.2.0.2`
+2. Скачайте SDK и найдите файл `libkalkancryptwr-64.so.2.0.2` в папке `C/Linux/C/libs/v2.0.2 (Сертифицированная версия)`
 3. Скопируйте библиотеку в локальную папку вашего проекта, например:
 
 ```
